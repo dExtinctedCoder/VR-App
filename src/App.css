@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+.app {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+h1 {
+  text-align: center;
+}
+form {
+  width: 100%;
+  max-width: 760px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: auto;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+::placeholder {
+  color: rgb(9, 9, 9);
+  font-weight: 100;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-family: inherit;
+}
+input,button {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+}
+input {
+  padding: 0.5rem;
+  border-bottom: 2px solid rgb(9, 9, 9);
+}
+input:focus, input:active {
+  border-color: #EEF62A;
+}
+button {
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  background-color: #EEF62A;
+  letter-spacing: 0.565rem;
+  cursor: pointer;
+}
+button#logout {
+  width: fit-content;
+  background-color: #EEF62A;
+  color: rgb(9, 9, 9);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
