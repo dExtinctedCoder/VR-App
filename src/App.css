@@ -8,9 +8,13 @@
   width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
+  background: #27083b;
 }
 h1 {
   text-align: center;
+  color: rgb(190, 83, 83);
+  letter-spacing: 0.35rem;
+  font-size: 2.5rem;
 }
 form {
   width: 100%;
@@ -32,6 +36,7 @@ form {
   font-size: 1rem;
   letter-spacing: 0.1rem;
   font-family: inherit;
+  color: inherit;
 }
 input,button {
   width: 100%;
@@ -40,7 +45,9 @@ input,button {
 }
 input {
   padding: 0.5rem;
-  border-bottom: 2px solid rgb(9, 9, 9);
+  border-bottom: 2px solid rgb(230, 230, 230);
+  background: transparent;
+  color: #fff;
 }
 input:focus, input:active {
   border-color: #EEF62A;

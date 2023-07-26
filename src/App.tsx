@@ -5,14 +5,11 @@ import './App.css'
 
 type loginProps = {
   setLogin: React.Dispatch<React.SetStateAction<boolean>>
-  setUsername: React.Dispatch<React.SetStateAction<string>>
 }
 
-const Login = ({ setLogin, setUsername }: loginProps) => {
-  // const [isLoggedIn, setIsLoggedIn] = useState(false)
+const Login = ({ setLogin }: loginProps) => {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setUsername(e.currentTarget.username.value)
     setLogin(true)
   }
   return (
@@ -29,12 +26,11 @@ const Login = ({ setLogin, setUsername }: loginProps) => {
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-  const [username, setUsername] = useState('')
   return (
     <div className='app'>
       {
         isLoggedIn ?
-          <VR user={username} setIsLoggedIn={setIsLoggedIn} /> : <Login setUsername={setUsername} setLogin={setIsLoggedIn} />
+          <VR setIsLoggedIn={setIsLoggedIn} /> : <Login setLogin={setIsLoggedIn} />
       }
     </div>
   );
